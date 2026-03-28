@@ -1,13 +1,16 @@
+# Environment & Secrets
+.env
+.env.local
+
+# Temporary workbench
+.tmp/
+
 # Dependencies
 node_modules/
 
 # Build output
 dist/
 build/
-
-# Environment
-.env
-.env.local
 
 # OS files
 .DS_Store
@@ -19,3 +22,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
