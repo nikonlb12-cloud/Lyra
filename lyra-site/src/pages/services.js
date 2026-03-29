@@ -5,7 +5,53 @@ import { initAll } from '../shared.js';
 document.getElementById('app').innerHTML = `
 ${getNav('services')}
 
-${getPageHeader('What we build for you', 'Every service is designed to do one thing: put more money in your pocket. Here\'s how.')}
+<!-- SERVICES HERO -->
+<section class="svc-hero">
+  <div class="svc-hero__bg" aria-hidden="true">
+    <div class="svc-hero__glow svc-hero__glow--1"></div>
+    <div class="svc-hero__glow svc-hero__glow--2"></div>
+  </div>
+
+  <div class="container svc-hero__content">
+    <!-- Announcement Badge -->
+    <aside class="svc-hero__badge reveal">
+      <span class="svc-hero__badge-dot"></span>
+      <span class="svc-hero__badge-text">AI-powered automation, live in 24 hours</span>
+      <a href="/free-trial.html" class="svc-hero__badge-link">
+        Try free for 14 days
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </aside>
+
+    <!-- Headline -->
+    <h1 class="svc-hero__title reveal">
+      What we build for you —<br>
+      <span class="svc-hero__title-gradient">the systems that grow your business</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="svc-hero__subtitle reveal">
+      Every service is designed to do one thing: put more money in your pocket.<br>
+      AI phone agents, automated follow-ups, smart websites, and more.
+    </p>
+
+    <!-- CTA -->
+    <div class="svc-hero__actions reveal">
+      <a href="/strategy-meeting.html" class="btn btn--primary btn--large svc-hero__cta">
+        Get started
+      </a>
+    </div>
+
+    <!-- Dashboard Preview -->
+    <div class="svc-hero__preview reveal">
+      <div class="svc-hero__preview-glow" aria-hidden="true"></div>
+      <div class="svc-hero__preview-frame">
+        <img src="/images/lyra-logo.png" alt="Lyra Capital" class="svc-hero__preview-logo" />
+        <img src="/images/analytics-dashboard.png" alt="Lyra Capital AI-powered dashboard — analytics, leads, and automations in one place" class="svc-hero__preview-img" loading="eager" />
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Service Cards Grid -->
 <section class="section">

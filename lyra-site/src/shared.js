@@ -302,6 +302,105 @@ export function initStaggerIndex() {
   });
 }
 
+// ---------- Chat Widget Dark Mode ----------
+export function initChatWidgetDarkMode() {
+  const DARK_FILTER = 'invert(0.88) hue-rotate(180deg)';
+  const DARK_BG = '#0d1117';
+
+  function applyDarkMode(el) {
+    if (!el || el.dataset.darkened) return;
+    el.dataset.darkened = 'true';
+
+    // Style the chat iframe itself
+    if (el.tagName === 'IFRAME') {
+      el.style.filter = DARK_FILTER;
+      el.style.background = DARK_BG;
+      el.style.borderRadius = '16px';
+      el.style.border = '1px solid rgba(59,91,255,0.2)';
+      el.style.boxShadow = '0 8px 40px rgba(0,0,0,0.6), 0 0 60px rgba(59,91,255,0.08)';
+    }
+  }
+
+  function scanForWidgets() {
+    // Target GHL chat widget iframes — they're usually inside divs near the data-widget-id script
+    document.querySelectorAll('iframe').forEach(iframe => {
+      const src = iframe.src || '';
+      // GHL chat widget iframes contain leadconnectorhq or msgsndr
+      if ((src.includes('leadconnectorhq') || src.includes('msgsndr') || src.includes('widgets.'))
+          && !iframe.closest('.booking-embed')
+          && !iframe.closest('.trial-form-card__body')
+          && !iframe.id?.includes('inline-')) {
+        applyDarkMode(iframe);
+      }
+    });
+
+    // Also target common GHL widget wrapper classes
+    document.querySelectorAll('[class*="lc-"] iframe, [class*="chat-widget"] iframe').forEach(iframe => {
+      if (!iframe.closest('.booking-embed') && !iframe.closest('.trial-form-card__body')) {
+        applyDarkMode(iframe);
+      }
+    });
+  }
+
+  // Initial scan
+  scanForWidgets();
+
+  // Watch for dynamically injected chat widget
+  const observer = new MutationObserver((mutations) => {
+    let shouldScan = false;
+    for (const mutation of mutations) {
+      if (mutation.addedNodes.length > 0) {
+        shouldScan = true;
+        break;
+      }
+    }
+    if (shouldScan) scanForWidgets();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+
+  // Periodic fallback — some widgets inject after delays
+  let checks = 0;
+  const interval = setInterval(() => {
+    scanForWidgets();
+    checks++;
+    if (checks >= 20) clearInterval(interval); // Stop after ~10s
+  }, 500);
+}
+
+// ---------- Mobile Sticky CTA Bar ----------
+export function initMobileStickyCtaBar() {
+  const bar = document.getElementById('mobileStickyCtaBar');
+  if (!bar) return;
+
+  // Only activate on mobile viewports
+  if (window.innerWidth > 768) return;
+
+  // Find the first major section to observe (hero or page-header)
+  const trigger = document.querySelector('.hero') ||
+                  document.querySelector('.svc-hero') ||
+                  document.querySelector('.page-header') ||
+                  document.querySelector('.trial-hero') ||
+                  document.querySelector('section');
+  if (!trigger) {
+    bar.classList.add('visible');
+    return;
+  }
+
+  const observer = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) {
+      bar.classList.remove('visible');
+    } else {
+      bar.classList.add('visible');
+    }
+  }, { threshold: 0 });
+
+  observer.observe(trigger);
+}
+
 // ---------- Initialize All ----------
 export function initAll() {
   initPageTransition();
@@ -313,4 +412,6 @@ export function initAll() {
   initParticles();
   initSpotlightCards();
   initStaggerIndex();
+  initChatWidgetDarkMode();
+  initMobileStickyCtaBar();
 }

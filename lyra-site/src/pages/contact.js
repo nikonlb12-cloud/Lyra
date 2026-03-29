@@ -1,5 +1,5 @@
 import '../styles.css';
-import { getNav, getFooter, getPageHeader, getFormEmbed, getCalendarEmbed } from '../components.js';
+import { getNav, getFooter, getPageHeader } from '../components.js';
 import { initAll } from '../shared.js';
 
 document.getElementById('app').innerHTML = `
@@ -11,6 +11,9 @@ ${getPageHeader('Contact Us', 'Get in touch — we\'d love to hear from you.')}
   <div class="container">
     <div class="two-col">
       <div class="reveal">
+        <!-- Mobile tap-to-call (hidden on desktop via CSS) -->
+        <a href="tel:+448003167364" class="contact-tap-call">📞 Tap to Call — Free Consultation</a>
+
         <div class="contact-info mb-48">
           <div class="contact-info__item">
             <div class="contact-info__icon">✉️</div>
@@ -36,7 +39,9 @@ ${getPageHeader('Contact Us', 'Get in touch — we\'d love to hear from you.')}
         </div>
       </div>
       <div class="reveal reveal--delay-2">
-        ${getFormEmbed('Get In Touch', 'Replace this div with your GHL contact form embed code')}
+        <div class="booking-embed" id="contact-booking-widget">
+          <iframe src="https://api.leadconnectorhq.com/widget/booking/EQMnUPQLTTYw7mltzfqm" style="width: 100%;border:none;overflow: hidden;min-height: 700px;" scrolling="no" id="contact-booking-iframe"></iframe>
+        </div>
       </div>
     </div>
   </div>

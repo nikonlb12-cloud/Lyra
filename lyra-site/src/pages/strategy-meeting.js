@@ -1,11 +1,11 @@
 import '../styles.css';
-import { getNav, getFooter, getPageHeader, getCalendarEmbed } from '../components.js';
+import { getNav, getFooter, getPageHeader } from '../components.js';
 import { initAll } from '../shared.js';
 
 document.getElementById('app').innerHTML = `
 ${getNav('')}
 
-${getPageHeader('Your free 15-minute strategy call', 'No pitch. No pressure. We\\'ll show you exactly where you\\'re losing leads — and how to fix it.')}
+${getPageHeader('Your free 15-minute strategy call', "No pitch. No pressure. We'll show you exactly where you're losing leads — and how to fix it.")}
 
 <section class="section">
   <div class="container">
@@ -55,7 +55,9 @@ ${getPageHeader('Your free 15-minute strategy call', 'No pitch. No pressure. We\
         </div>
       </div>
       <div class="reveal reveal--delay-2">
-        ${getCalendarEmbed('Strategy Meeting Calendar')}
+        <div class="booking-embed" id="booking-widget">
+          <iframe src="https://api.leadconnectorhq.com/widget/booking/EQMnUPQLTTYw7mltzfqm" style="width: 100%;border:none;overflow: hidden;min-height: 700px;" scrolling="no" id="ijlR6hS7PsXeLJb1Njon_1774676961910"></iframe>
+        </div>
       </div>
     </div>
   </div>

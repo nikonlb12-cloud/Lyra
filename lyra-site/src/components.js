@@ -40,7 +40,9 @@ export function getNav(activePage = '') {
         </div>
         <a href="/services.html" class="nav__link ${activePage === 'services' ? 'nav__link--active' : ''}">Services</a>
       </div>
+      <a href="/free-trial.html" class="nav__trial-cta ${activePage === 'free-trial' ? 'nav__trial-cta--active' : ''}">🎁 Free Trial</a>
       <a href="/contact.html" class="btn btn--primary nav__cta">Contact Us</a>
+      <a href="/free-trial.html" class="nav__mobile-pill">🎁 Free Trial</a>
       <button class="nav__burger" id="navBurger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -57,12 +59,20 @@ export function getNav(activePage = '') {
     <a href="/pricing.html" class="nav__mobile-link">Plans & Pricing</a>
     <a href="/services.html" class="nav__mobile-link">Services</a>
     <a href="/contact.html" class="nav__mobile-link">Contact Us</a>
-    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 20px;">Book Free Demo</a>
+    <a href="/free-trial.html" class="nav__mobile-trial-cta">🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS</a>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
   </div>`;
 }
 
 export function getFooter() {
   return `
+  <!-- Mobile Pre-Footer CTA (hidden on desktop) -->
+  <div class="mobile-prefooter-cta">
+    <div class="mobile-prefooter-cta__title">Still deciding?</div>
+    <p class="mobile-prefooter-cta__text">Book a free 15-min call — we'll show you exactly what we'd build for your business.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -96,7 +106,13 @@ export function getFooter() {
         Copyright © 2026. Lyra Capital. All rights reserved.
       </div>
     </div>
-  </footer>`;
+  </footer>
+
+  <!-- Mobile Sticky CTA Bar (hidden on desktop) -->
+  <div class="mobile-sticky-cta" id="mobileStickyCtaBar">
+    <a href="/strategy-meeting.html" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
+    <a href="tel:+448003167364" class="mobile-sticky-cta__call" aria-label="Call us">📞</a>
+  </div>`;
 }
 
 export function getPageHeader(title, subtitle = '') {

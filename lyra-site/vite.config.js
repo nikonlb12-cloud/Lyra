@@ -18,6 +18,7 @@ export default defineConfig({
         agents: resolve(__dirname, 'agents.html'),
         'ai-ads': resolve(__dirname, 'ai-ads.html'),
         'strategy-meeting': resolve(__dirname, 'strategy-meeting.html'),
+        'free-trial': resolve(__dirname, 'free-trial.html'),
       },
     },
   },
