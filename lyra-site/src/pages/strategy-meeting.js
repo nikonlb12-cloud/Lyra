@@ -3,7 +3,7 @@ import { getNav, getFooter, getPageHeader } from '../components.js';
 import { initAll } from '../shared.js';
 
 document.getElementById('app').innerHTML = `
-${getNav('')}
+${getNav('strategy-meeting')}
 
 ${getPageHeader('Your free 15-minute strategy call', "No pitch. No pressure. We'll show you exactly where you're losing leads — and how to fix it.")}
 
@@ -63,7 +63,7 @@ ${getPageHeader('Your free 15-minute strategy call', "No pitch. No pressure. We'
   </div>
 </section>
 
-${getFooter()}
+${getFooter('strategy-meeting')}
 `;
 
 initAll();

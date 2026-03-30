@@ -4,6 +4,7 @@
    ============================================ */
 
 export function getNav(activePage = '') {
+  const strategyLink = activePage === 'strategy-meeting' ? '#booking-widget' : '/strategy-meeting.html';
   return `
   <a href="#main-content" class="skip-link">Skip to content</a>
   <canvas id="particles-canvas"></canvas>
@@ -60,17 +61,18 @@ export function getNav(activePage = '') {
     <a href="/services.html" class="nav__mobile-link">Services</a>
     <a href="/contact.html" class="nav__mobile-link">Contact Us</a>
     <a href="/free-trial.html" class="nav__mobile-trial-cta">🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS</a>
-    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
+    <a href="${strategyLink}" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
   </div>`;
 }
 
-export function getFooter() {
+export function getFooter(activePage = '') {
+  const strategyLink = activePage === 'strategy-meeting' ? '#booking-widget' : '/strategy-meeting.html';
   return `
   <!-- Mobile Pre-Footer CTA (hidden on desktop) -->
   <div class="mobile-prefooter-cta">
     <div class="mobile-prefooter-cta__title">Still deciding?</div>
     <p class="mobile-prefooter-cta__text">Book a free 15-min call — we'll show you exactly what we'd build for your business.</p>
-    <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
+    <a href="${strategyLink}" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
   </div>
 
   <footer class="footer">
@@ -110,7 +112,7 @@ export function getFooter() {
 
   <!-- Mobile Sticky CTA Bar (hidden on desktop) -->
   <div class="mobile-sticky-cta" id="mobileStickyCtaBar">
-    <a href="/strategy-meeting.html" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
+    <a href="${strategyLink}" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
     <a href="tel:+448003167364" class="mobile-sticky-cta__call" aria-label="Call us">📞</a>
   </div>`;
 }
