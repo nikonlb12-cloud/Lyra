@@ -220,7 +220,7 @@ ${getNav('web-development')}
       </div>
       <div class="faq__item">
         <button class="faq__question">What if I want a website without A.I.? <span class="faq__icon">+</span></button>
-        <div class="faq__answer"><p>That's fine! I'll still build your website completely for free and only charge a £26/m hosting and maintenance fee.</p></div>
+        <div class="faq__answer"><p>That's fine! I'll still build your website completely for free — all I ask in return is an honest review. No monthly fees, no hidden costs. Just a great website and a review to help me grow.</p></div>
       </div>
     </div>
   </div>
