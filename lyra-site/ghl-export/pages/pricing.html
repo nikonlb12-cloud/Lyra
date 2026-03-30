@@ -1,0 +1,269 @@
+<!-- pricing.html — Lyra Capital -->
+<!-- GHL: Paste this into the page's Custom Code editor -->
+<!-- Make sure site-css.css is in Site Settings → Custom CSS -->
+<!-- Make sure site-footer-js.html is in Site Settings → Custom Code → Footer -->
+
+<div id="app">
+
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <canvas id="particles-canvas"></canvas>
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link ">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-trigger ">
+            About <span class="nav__dropdown-arrow">▼</span>
+          </span>
+          <div class="nav__dropdown-menu">
+            <a href="/about.html" class="nav__dropdown-item">Our Story</a>
+            <a href="/core-values.html" class="nav__dropdown-item">Core Values</a>
+            <a href="/why-us.html" class="nav__dropdown-item">Why Choose Us</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <a href="/pricing.html" class="nav__link nav__dropdown-trigger nav__link--active">
+            Plans & Pricing <span class="nav__dropdown-arrow">▼</span>
+          </a>
+          <div class="nav__dropdown-menu">
+            <div style="padding: 16px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">Choose your growth plan:</p>
+              <a href="/pricing.html#starter" class="nav__dropdown-item">🚀 Starter — £260.17/mo</a>
+              <a href="/pricing.html#growth" class="nav__dropdown-item">📈 Growth — £422.88/mo</a>
+              <a href="/pricing.html#pro" class="nav__dropdown-item">⚡ Pro — £1,520/mo</a>
+              <a href="/pricing.html#yearly" class="nav__dropdown-item">💎 Yearly Premium</a>
+            </div>
+          </div>
+        </div>
+        <a href="/services.html" class="nav__link ">Services</a>
+      </div>
+      <a href="/free-trial.html" class="nav__trial-cta ">🎁 Free Trial</a>
+      <a href="/contact.html" class="btn btn--primary nav__cta">Contact Us</a>
+      <a href="/free-trial.html" class="nav__mobile-pill">🎁 Free Trial</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="/" class="nav__mobile-link">Home</a>
+    <div class="nav__mobile-sub">
+      <span class="nav__mobile-link" style="color: var(--accent-primary); font-weight: 600; border: none; padding-bottom: 8px;">About</span>
+      <a href="/about.html" class="nav__mobile-link">Our Story</a>
+      <a href="/core-values.html" class="nav__mobile-link">Core Values</a>
+      <a href="/why-us.html" class="nav__mobile-link">Why Choose Us</a>
+    </div>
+    <a href="/pricing.html" class="nav__mobile-link">Plans & Pricing</a>
+    <a href="/services.html" class="nav__mobile-link">Services</a>
+    <a href="/contact.html" class="nav__mobile-link">Contact Us</a>
+    <a href="/free-trial.html" class="nav__mobile-trial-cta">🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS</a>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
+  </div>
+
+
+  <section class="page-header">
+    <div class="page-header__bg">
+      <div class="page-header__gradient"></div>
+    </div>
+    <div class="container page-header__content">
+      <h1>Cheaper than hiring. Smarter than outsourcing.</h1>
+      <p>A part-time receptionist costs £1,200/mo and works 9-5. Our AI costs from £88/mo and never sleeps.</p>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <a href="/web-development.html" class="btn btn--outline btn--large" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">
+        🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS <span class="btn-arrow">→</span>
+      </a>
+    </div>
+
+    <div class="grid grid--3 mb-64">
+      <div class="pricing-card reveal reveal--delay-1" id="starter">
+        <h4 class="pricing-card__name">Starter</h4>
+        <div class="pricing-card__price">£260.17</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Small businesses or startups looking to establish their online presence.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Smart website integration/creation</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Basic email marketing</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Basic lead management and nurturing</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004GXE0V26P" target="_blank" class="btn btn--outline btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="pricing-card pricing-card--featured reveal reveal--delay-2" id="growth">
+        <h4 class="pricing-card__name">Growth</h4>
+        <div class="pricing-card__price">£422.88</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Midlevel businesses or startups looking to scale.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Everything in the basic plan</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> CRM (All messages + data analytics)</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> A.I. receptionist for calls and bookings</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Reputation management</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004GXF58PBA" target="_blank" class="btn btn--primary btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="pricing-card reveal reveal--delay-3" id="pro">
+        <h4 class="pricing-card__name">Pro</h4>
+        <div class="pricing-card__price">£1,520</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Large businesses or Enterprises looking to scale and increase productivity.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Everything in all other plans</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> A.I. Receptionist (Handles calls & books appointments)</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> CRM + Data Analytics</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Automatic Invoicing</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Social media marketing and A.I. ad creation</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004GXEE54W6" target="_blank" class="btn btn--outline btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <!-- Additional Plans -->
+    <div class="text-center reveal mb-32">
+      <span class="section-label">Additional Options</span>
+      <h3 class="mb-16">More Ways to Get Started</h3>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="pricing-card reveal reveal--delay-1" id="yearly">
+        <h4 class="pricing-card__name">Yearly Premium</h4>
+        <div class="pricing-card__price">£4,400.88</div>
+        <div class="pricing-card__period">per year</div>
+        <p class="pricing-card__desc">Everything in the premium plan + extra perks. Best value for committed growth.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> All Pro features included</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Yearly savings vs monthly</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Priority support</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004GXF8E4VX" target="_blank" class="btn btn--outline btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="pricing-card reveal reveal--delay-2">
+        <h4 class="pricing-card__name">A.I. Smart Website</h4>
+        <div class="pricing-card__price">£88.44</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Standalone AI-powered website with voice AI and chatbot functionality.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> AI-powered website</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Voice A.I. included</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Hosting included</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004N7YBFT7A" target="_blank" class="btn btn--outline btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="pricing-card reveal reveal--delay-3">
+        <h4 class="pricing-card__name">A.I. Receptionist</h4>
+        <div class="pricing-card__price">£211.40</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Standalone AI receptionist for call handling and appointment booking.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> 24/7 call answering</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Lead qualification</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Appointment booking</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004QSP3FJ0Q" target="_blank" class="btn btn--outline btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="text-center reveal mt-48 mb-48">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">🛡️ 14-day money-back guarantee on all plans. No contracts — cancel anytime with one click.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->  
+<section class="section section--dark">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">Common questions</span>
+      <h2 class="mb-16">Before you <span class="text-gradient">decide</span></h2>
+    </div>
+    <div class="max-w-800 mx-auto">
+      <div class="card reveal reveal--delay-1" style="margin-bottom: 16px; padding: 24px 32px;">
+        <h4 style="margin-bottom: 8px;">Am I locked into a contract?</h4>
+        <p style="color: var(--text-muted);">No. Every plan is month-to-month. Cancel anytime with one click — no penalties, no phone calls, no guilt trips.</p>
+      </div>
+      <div class="card reveal reveal--delay-2" style="margin-bottom: 16px; padding: 24px 32px;">
+        <h4 style="margin-bottom: 8px;">How fast will I be set up?</h4>
+        <p style="color: var(--text-muted);">Under 24 hours for most plans. We build your system, configure the AI, and test everything before go-live. You just approve.</p>
+      </div>
+      <div class="card reveal reveal--delay-3" style="margin-bottom: 16px; padding: 24px 32px;">
+        <h4 style="margin-bottom: 8px;">What if it doesn't work for my business?</h4>
+        <p style="color: var(--text-muted);">14-day money-back guarantee. If you're not seeing results, we'll refund every penny. No questions asked.</p>
+      </div>
+      <div class="card reveal" style="margin-bottom: 16px; padding: 24px 32px;">
+        <h4 style="margin-bottom: 8px;">Can I switch plans later?</h4>
+        <p style="color: var(--text-muted);">Absolutely. Upgrade or downgrade at any time. Your data and configuration carry over seamlessly.</p>
+      </div>
+    </div>
+    <div class="text-center reveal mt-48">
+      <h3 class="mb-16">Still unsure? Let's talk.</h3>
+      <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book a Free 15-Min Call <span class="btn-arrow">→</span></a>
+      <p style="color: var(--text-muted); margin-top: 12px; font-size: 0.85rem;">We'll recommend the right plan for your business — or tell you if it's not a fit.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Mobile Pre-Footer CTA (hidden on desktop) -->
+  <div class="mobile-prefooter-cta">
+    <div class="mobile-prefooter-cta__title">Still deciding?</div>
+    <p class="mobile-prefooter-cta__text">Book a free 15-min call — we'll show you exactly what we'd build for your business.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="footer__logo-img" />
+          </div>
+          <p class="footer__desc">London-based AI automation agency empowering businesses through intelligent digital systems. Where innovation meets results.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="/" class="footer__link">Home</a>
+          <a href="/services.html" class="footer__link">Services</a>
+          <a href="/pricing.html" class="footer__link">Pricing</a>
+          <a href="/contact.html" class="footer__link">Contact Us</a>
+          <a href="/about.html" class="footer__link">About Us</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:+448003167364">+44 800 316 7364</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>✉️</span>
+            <a href="mailto:contact@lyracapital.co.uk">contact@lyracapital.co.uk</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026. Lyra Capital. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA Bar (hidden on desktop) -->
+  <div class="mobile-sticky-cta" id="mobileStickyCtaBar">
+    <a href="/strategy-meeting.html" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
+    <a href="tel:+448003167364" class="mobile-sticky-cta__call" aria-label="Call us">📞</a>
+  </div>
+
+</div>
+
+
+<!-- Page-specific widgets -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69a7f138e7bf961b03c4bd64"></script>

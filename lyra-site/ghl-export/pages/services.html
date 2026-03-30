@@ -1,9 +1,68 @@
-import '../styles.css';
-import { getNav, getFooter, getPageHeader } from '../components.js';
-import { initAll } from '../shared.js';
+<!-- services.html — Lyra Capital -->
+<!-- GHL: Paste this into the page's Custom Code editor -->
+<!-- Make sure site-css.css is in Site Settings → Custom CSS -->
+<!-- Make sure site-footer-js.html is in Site Settings → Custom Code → Footer -->
 
-document.getElementById('app').innerHTML = `
-${getNav('services')}
+<div id="app">
+
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <canvas id="particles-canvas"></canvas>
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link ">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-trigger ">
+            About <span class="nav__dropdown-arrow">▼</span>
+          </span>
+          <div class="nav__dropdown-menu">
+            <a href="/about.html" class="nav__dropdown-item">Our Story</a>
+            <a href="/core-values.html" class="nav__dropdown-item">Core Values</a>
+            <a href="/why-us.html" class="nav__dropdown-item">Why Choose Us</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <a href="/pricing.html" class="nav__link nav__dropdown-trigger ">
+            Plans & Pricing <span class="nav__dropdown-arrow">▼</span>
+          </a>
+          <div class="nav__dropdown-menu">
+            <div style="padding: 16px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">Choose your growth plan:</p>
+              <a href="/pricing.html#starter" class="nav__dropdown-item">🚀 Starter — £260.17/mo</a>
+              <a href="/pricing.html#growth" class="nav__dropdown-item">📈 Growth — £422.88/mo</a>
+              <a href="/pricing.html#pro" class="nav__dropdown-item">⚡ Pro — £1,520/mo</a>
+              <a href="/pricing.html#yearly" class="nav__dropdown-item">💎 Yearly Premium</a>
+            </div>
+          </div>
+        </div>
+        <a href="/services.html" class="nav__link nav__link--active">Services</a>
+      </div>
+      <a href="/free-trial.html" class="nav__trial-cta ">🎁 Free Trial</a>
+      <a href="/contact.html" class="btn btn--primary nav__cta">Contact Us</a>
+      <a href="/free-trial.html" class="nav__mobile-pill">🎁 Free Trial</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="/" class="nav__mobile-link">Home</a>
+    <div class="nav__mobile-sub">
+      <span class="nav__mobile-link" style="color: var(--accent-primary); font-weight: 600; border: none; padding-bottom: 8px;">About</span>
+      <a href="/about.html" class="nav__mobile-link">Our Story</a>
+      <a href="/core-values.html" class="nav__mobile-link">Core Values</a>
+      <a href="/why-us.html" class="nav__mobile-link">Why Choose Us</a>
+    </div>
+    <a href="/pricing.html" class="nav__mobile-link">Plans & Pricing</a>
+    <a href="/services.html" class="nav__mobile-link">Services</a>
+    <a href="/contact.html" class="nav__mobile-link">Contact Us</a>
+    <a href="/free-trial.html" class="nav__mobile-trial-cta">🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS</a>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
+  </div>
 
 <!-- SERVICES HERO -->
 <section class="svc-hero">
@@ -42,6 +101,14 @@ ${getNav('services')}
       </a>
     </div>
 
+    <!-- Dashboard Preview -->
+    <div class="svc-hero__preview reveal">
+      <div class="svc-hero__preview-glow" aria-hidden="true"></div>
+      <div class="svc-hero__preview-frame">
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="svc-hero__preview-logo" />
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/analytics-dashboard.png" alt="Lyra Capital AI-powered dashboard — analytics, leads, and automations in one place" class="svc-hero__preview-img" loading="eager" />
+      </div>
+    </div>
   </div>
 </section>
 
@@ -191,7 +258,7 @@ ${getNav('services')}
         </div>
       </div>
       <div class="reveal reveal--delay-2" style="display: flex; justify-content: center;">
-        <img src="/images/source-image-1.png" alt="Lyra Capital CRM — Unified Inbox" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);" />
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/source-image-1.png" alt="Lyra Capital CRM — Unified Inbox" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);" />
       </div>
     </div>
   </div>
@@ -207,7 +274,7 @@ ${getNav('services')}
         <p class="mb-24">The ability to track the ROI and Leads in a pipeline has become even easier through our advanced Dashboard. Track stats such as appointment rates, campaign effectiveness, and even response rates!</p>
       </div>
       <div class="reveal reveal--delay-2" style="direction: ltr; display: flex; justify-content: center;">
-        <img src="/images/analytics-dashboard.png" alt="Lyra Capital Analytics Dashboard" style="width: 100%; max-width: 480px; border-radius: 0; box-shadow: none; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-composite: destination-in; mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%); mask-composite: intersect;" />
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/analytics-dashboard.png" alt="Lyra Capital Analytics Dashboard" style="width: 100%; max-width: 480px; border-radius: 0; box-shadow: none; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-composite: destination-in; mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%); mask-composite: intersect;" />
       </div>
     </div>
   </div>
@@ -312,125 +379,57 @@ ${getNav('services')}
   </div>
 </section>
 
-${getFooter()}
-`;
 
-// ROI Calculator logic
-const calcHours = document.getElementById('calc-hours');
-const calcRate = document.getElementById('calc-rate');
-const calcLeads = document.getElementById('calc-leads');
+  <!-- Mobile Pre-Footer CTA (hidden on desktop) -->
+  <div class="mobile-prefooter-cta">
+    <div class="mobile-prefooter-cta__title">Still deciding?</div>
+    <p class="mobile-prefooter-cta__text">Book a free 15-min call — we'll show you exactly what we'd build for your business.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
+  </div>
 
-function updateCalc() {
-  const hours = parseInt(calcHours.value);
-  const rate = parseInt(calcRate.value);
-  const leads = parseInt(calcLeads.value);
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="footer__logo-img" />
+          </div>
+          <p class="footer__desc">London-based AI automation agency empowering businesses through intelligent digital systems. Where innovation meets results.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="/" class="footer__link">Home</a>
+          <a href="/services.html" class="footer__link">Services</a>
+          <a href="/pricing.html" class="footer__link">Pricing</a>
+          <a href="/contact.html" class="footer__link">Contact Us</a>
+          <a href="/about.html" class="footer__link">About Us</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:+448003167364">+44 800 316 7364</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>✉️</span>
+            <a href="mailto:contact@lyracapital.co.uk">contact@lyracapital.co.uk</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026. Lyra Capital. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
-  document.getElementById('calc-hours-val').textContent = hours + ' hrs';
-  document.getElementById('calc-rate-val').textContent = '£' + rate;
-  document.getElementById('calc-leads-val').textContent = leads;
+  <!-- Mobile Sticky CTA Bar (hidden on desktop) -->
+  <div class="mobile-sticky-cta" id="mobileStickyCtaBar">
+    <a href="/strategy-meeting.html" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
+    <a href="tel:+448003167364" class="mobile-sticky-cta__call" aria-label="Call us">📞</a>
+  </div>
 
-  const savedHours = Math.round(hours * 0.75 * 4);
-  const savedMoney = savedHours * rate;
-  const extraRevenue = leads * 200;
+</div>
 
-  document.getElementById('calc-result-hours').textContent = savedHours + ' hrs';
-  document.getElementById('calc-result-money').textContent = '£' + savedMoney.toLocaleString();
-  document.getElementById('calc-result-revenue').textContent = '£' + extraRevenue.toLocaleString();
-}
 
-calcHours?.addEventListener('input', updateCalc);
-calcRate?.addEventListener('input', updateCalc);
-calcLeads?.addEventListener('input', updateCalc);
-updateCalc();
-
-// ── AI Simulator ──
-(function initSimulator() {
-  const msgs = document.getElementById('simMessages');
-  const avatar = document.getElementById('simAvatar');
-  const name = document.getElementById('simName');
-  const tabs = document.querySelectorAll('.sim-tab-btn');
-  if (!msgs) return;
-
-  let timeouts = [];
-  let started = false;
-
-  const avatarMap = {
-    booking:      { cls: 'sim-chat-avatar--booking',      text: 'BA', name: 'Booking Assistant' },
-    reviews:      { cls: 'sim-chat-avatar--reviews',       text: 'RE', name: 'Review Engine' },
-    reactivation: { cls: 'sim-chat-avatar--reactivation',  text: 'CR', name: 'Reactivation Bot' },
-  };
-
-  const sequences = {
-    booking: [
-      { text: "Hey, any openings this Friday?", sender: 'user', delay: 800 },
-      { text: "Hey! 👋 Yes, 2:00 PM and 4:30 PM are open with Mike. Want one?", sender: 'bot', delay: 2400 },
-      { text: "4:30 works.", sender: 'user', delay: 4000 },
-      { text: "Great. Secure it with a deposit here: secure-book.com/pay", sender: 'bot', delay: 5500 },
-      { text: "Done.", sender: 'user', delay: 7200 },
-      { text: "Confirmed! ✅ See you Friday at 4:30 PM.", sender: 'bot', delay: 8200 },
-    ],
-    reviews: [
-      { text: "Thanks for visiting today! How was the service?", sender: 'bot', delay: 800 },
-      { text: "Amazing as always.", sender: 'user', delay: 2800 },
-      { text: "Glad to hear it! Mind leaving a quick review? google.com/review", sender: 'bot', delay: 4200 },
-      { text: "Sure doing it now.", sender: 'user', delay: 6200 },
-      { type: 'system', text: "⭐ New 5-Star Review Detected", delay: 7800 },
-    ],
-    reactivation: [
-      { type: 'system', text: "📋 Reactivation Campaign Sent to Inactive Clients", delay: 400 },
-      { text: "Hi James, we haven't seen you in a while so we're offering past clients 20% off their next appointment this week. Book here: [Booking Link]", sender: 'bot', delay: 2000 },
-      { text: "Oh nice, I might grab a slot.", sender: 'user', delay: 5000 },
-      { text: "Great! Your returning client discount will be applied automatically when you book.", sender: 'bot', delay: 7000 },
-    ],
-  };
-
-  function runSequence(tab) {
-    timeouts.forEach(t => clearTimeout(t));
-    timeouts = [];
-    msgs.innerHTML = '';
-
-    // Update avatar
-    avatar.className = 'sim-chat-avatar ' + avatarMap[tab].cls;
-    avatar.textContent = avatarMap[tab].text;
-    name.textContent = avatarMap[tab].name;
-
-    sequences[tab].forEach(msg => {
-      const t = setTimeout(() => {
-        if (msg.type === 'system') {
-          const el = document.createElement('div');
-          el.className = 'sim-system-alert';
-          el.innerHTML = '<div class="sim-system-alert__inner">' + msg.text + '</div>';
-          msgs.appendChild(el);
-        } else {
-          const el = document.createElement('div');
-          el.className = 'sim-msg sim-msg--' + msg.sender;
-          el.textContent = msg.text;
-          msgs.appendChild(el);
-        }
-        msgs.scrollTop = msgs.scrollHeight;
-      }, msg.delay);
-      timeouts.push(t);
-    });
-  }
-
-  tabs.forEach(btn => {
-    btn.addEventListener('click', function () {
-      tabs.forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
-      runSequence(this.dataset.sim);
-    });
-  });
-
-  // Auto-start when visible
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !started) {
-        started = true;
-        runSequence('booking');
-      }
-    });
-  }, { threshold: 0.3 });
-  observer.observe(document.querySelector('.simulator-container'));
-})();
-
-initAll();
+<!-- Page-specific widgets -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69a7f138e7bf961b03c4bd64"></script>

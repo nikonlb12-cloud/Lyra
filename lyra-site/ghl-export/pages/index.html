@@ -1,0 +1,512 @@
+<!-- index.html — Lyra Capital -->
+<!-- GHL: Paste this into the page's Custom Code editor -->
+<!-- Make sure site-css.css is in Site Settings → Custom CSS -->
+<!-- Make sure site-footer-js.html is in Site Settings → Custom Code → Footer -->
+
+<div id="app">
+
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <canvas id="particles-canvas"></canvas>
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link nav__link--active">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-trigger ">
+            About <span class="nav__dropdown-arrow">▼</span>
+          </span>
+          <div class="nav__dropdown-menu">
+            <a href="/about.html" class="nav__dropdown-item">Our Story</a>
+            <a href="/core-values.html" class="nav__dropdown-item">Core Values</a>
+            <a href="/why-us.html" class="nav__dropdown-item">Why Choose Us</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <a href="/pricing.html" class="nav__link nav__dropdown-trigger ">
+            Plans & Pricing <span class="nav__dropdown-arrow">▼</span>
+          </a>
+          <div class="nav__dropdown-menu">
+            <div style="padding: 16px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">Choose your growth plan:</p>
+              <a href="/pricing.html#starter" class="nav__dropdown-item">🚀 Starter — £260.17/mo</a>
+              <a href="/pricing.html#growth" class="nav__dropdown-item">📈 Growth — £422.88/mo</a>
+              <a href="/pricing.html#pro" class="nav__dropdown-item">⚡ Pro — £1,520/mo</a>
+              <a href="/pricing.html#yearly" class="nav__dropdown-item">💎 Yearly Premium</a>
+            </div>
+          </div>
+        </div>
+        <a href="/services.html" class="nav__link ">Services</a>
+      </div>
+      <a href="/free-trial.html" class="nav__trial-cta ">🎁 Free Trial</a>
+      <a href="/contact.html" class="btn btn--primary nav__cta">Contact Us</a>
+      <a href="/free-trial.html" class="nav__mobile-pill">🎁 Free Trial</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="/" class="nav__mobile-link">Home</a>
+    <div class="nav__mobile-sub">
+      <span class="nav__mobile-link" style="color: var(--accent-primary); font-weight: 600; border: none; padding-bottom: 8px;">About</span>
+      <a href="/about.html" class="nav__mobile-link">Our Story</a>
+      <a href="/core-values.html" class="nav__mobile-link">Core Values</a>
+      <a href="/why-us.html" class="nav__mobile-link">Why Choose Us</a>
+    </div>
+    <a href="/pricing.html" class="nav__mobile-link">Plans & Pricing</a>
+    <a href="/services.html" class="nav__mobile-link">Services</a>
+    <a href="/contact.html" class="nav__mobile-link">Contact Us</a>
+    <a href="/free-trial.html" class="nav__mobile-trial-cta">🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS</a>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
+  </div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg">
+    <!-- Cybercore grid background -->
+    <div class="cybercore-scene" aria-hidden="true">
+      <div class="cybercore-floor"></div>
+      <div class="cybercore-column"></div>
+      <div class="cybercore-beams" id="cybercoreBeams"></div>
+    </div>
+    <div class="hero__gradient hero__gradient--1"></div>
+    <div class="hero__gradient hero__gradient--2"></div>
+    <div class="hero__gradient hero__gradient--3"></div>
+  </div>
+  <div class="container hero__content">
+    <div class="hero__grid">
+      <div>
+
+        <h1 class="hero__title">Stop losing leads.<br><span class="text-gradient">Turn every missed call into a booked appointment.</span></h1>
+        <p class="hero__text">We build AI systems that answer your phone, follow up with leads via text, and book appointments for you — even at 3am. Set up in under 24 hours.</p>
+        <div class="hero__actions">
+          <a href="/strategy-meeting.html" class="btn btn--primary btn--large">
+            See It Working — Free Demo
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="/pricing.html" class="btn btn--outline btn--large">
+            View Pricing
+          </a>
+        </div>
+        <p class="hero__trust-line">✓ No contracts &nbsp;·&nbsp; ✓ Cancel anytime &nbsp;·&nbsp; ✓ Live in under 24hrs</p>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-wrapper">
+          <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/hero-person.png" alt="AI-Powered Business Growth" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div class="float-card float-card--1">
+          <div class="float-card__icon">⭐</div>
+          <div>
+            <div style="font-weight: 600;">5.0</div>
+            <div class="float-card__stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="float-card float-card--2">
+          <div class="float-card__icon">📈</div>
+          <div>
+            <div style="font-weight: 600;">New Leads</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">24 New Contacts</div>
+          </div>
+        </div>
+        <div class="float-card float-card--3">
+          <div class="float-card__icon">💬</div>
+          <div>
+            <div style="font-weight: 600;">Great Service!</div>
+            <div class="float-card__stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF BAR -->
+<section class="social-proof-bar reveal">
+  <div class="container">
+    <div class="social-proof-bar__inner">
+      <div class="social-proof-bar__stat">
+        <span class="social-proof-bar__number" data-count="200" data-suffix="+">0</span>
+        <span class="social-proof-bar__label">Businesses automated</span>
+      </div>
+      <div class="social-proof-bar__divider"></div>
+      <div class="social-proof-bar__stat">
+        <span class="social-proof-bar__number" data-count="47" data-suffix="K+">0</span>
+        <span class="social-proof-bar__label">Leads captured</span>
+      </div>
+      <div class="social-proof-bar__divider"></div>
+      <div class="social-proof-bar__stat">
+        <span class="social-proof-bar__number" data-count="24" data-suffix="hr">0</span>
+        <span class="social-proof-bar__label">Average setup time</span>
+      </div>
+      <div class="social-proof-bar__divider"></div>
+      <div class="social-proof-bar__stat">
+        <span class="social-proof-bar__number" data-count="98" data-suffix="%">0</span>
+        <span class="social-proof-bar__label">Client retention rate</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM → SOLUTION -->
+<section class="section" style="text-align: center;">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Why businesses switch to us</span>
+      <h2 class="mb-16">You're losing money every day <span class="text-gradient">you don't fix this</span></h2>
+      <p class="max-w-640 mx-auto mb-48">Most businesses lose 40% of their leads to slow follow-up. Here's what that looks like — and how we fix it.</p>
+    </div>
+
+    <div class="grid grid--3 mb-64">
+      <div class="card reveal reveal--delay-1">
+        <div class="card__icon">📞</div>
+        <h4 class="card__title">Missed calls = missed revenue</h4>
+        <p class="card__text" style="color: rgba(239,68,68,0.8); font-size: 0.9rem;">❌ You miss a call at 7pm. That lead calls your competitor.</p>
+        <p class="card__text" style="color: rgba(34,197,94,0.9); font-size: 0.9rem; margin-top: 8px;">✅ Our AI answers instantly, qualifies the lead, and books them in your calendar.</p>
+      </div>
+      <div class="card reveal reveal--delay-2">
+        <div class="card__icon">⏳</div>
+        <h4 class="card__title">Leads go cold in minutes</h4>
+        <p class="card__text" style="color: rgba(239,68,68,0.8); font-size: 0.9rem;">❌ A form submission sits in your inbox for 3 hours. By then, they've forgotten you.</p>
+        <p class="card__text" style="color: rgba(34,197,94,0.9); font-size: 0.9rem; margin-top: 8px;">✅ We auto-text within 60 seconds with a personalised response + booking link.</p>
+      </div>
+      <div class="card reveal reveal--delay-3">
+        <div class="card__icon">🧩</div>
+        <h4 class="card__title">Too many tools, no system</h4>
+        <p class="card__text" style="color: rgba(239,68,68,0.8); font-size: 0.9rem;">❌ Gmail, WhatsApp, spreadsheets, a CRM you never open. Nothing talks to each other.</p>
+        <p class="card__text" style="color: rgba(34,197,94,0.9); font-size: 0.9rem; margin-top: 8px;">✅ One dashboard. Calls, texts, emails, reviews, calendar — all connected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">Results, not promises</span>
+      <h2 class="mb-16">What our clients <span class="text-gradient">actually say</span></h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card testimonial-card reveal reveal--delay-1">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">"We were losing about 15 leads a week to missed calls. Within the first month of Lyra's system, we booked 47 new appointments without lifting a finger."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">JM</div>
+          <div>
+            <div class="testimonial-card__name">James Morrison</div>
+            <div class="testimonial-card__role">Owner, Morrison Plumbing</div>
+          </div>
+        </div>
+      </div>
+      <div class="card testimonial-card reveal reveal--delay-2">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">"I was sceptical about AI handling my client calls. But the voice agent sounds natural (not robotic at all), and my Google reviews went from 3.8 to 4.7 in 8 weeks."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">SP</div>
+          <div>
+            <div class="testimonial-card__name">Sarah Patel</div>
+            <div class="testimonial-card__role">Director, Glow Aesthetics</div>
+          </div>
+        </div>
+      </div>
+      <div class="card testimonial-card reveal reveal--delay-3">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">"The ROI is mental. We spend £422/mo and it replaced a £2,800/mo receptionist who was only available 9-5. The AI works weekends too."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">DK</div>
+          <div>
+            <div class="testimonial-card__name">David Kowalski</div>
+            <div class="testimonial-card__role">CEO, FastFix Property Services</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 SIMPLE STEPS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">How it works</span>
+      <h2 class="mb-16">Live in <span class="text-gradient">under 24 hours</span></h2>
+      <p class="max-w-640 mx-auto">No 6-week onboarding. No 'discovery phases.' We get you live fast because every day without this system costs you money.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal reveal--delay-1">
+        <div class="step__number">01</div>
+        <h3 class="step__title">15-min strategy call</h3>
+        <p class="step__text">We learn your business, identify where leads are leaking, and show you exactly how we'll plug the gaps. No sales pitch.</p>
+      </div>
+      <div class="step reveal reveal--delay-2">
+        <div class="step__number">02</div>
+        <h3 class="step__title">We build your system (24hrs)</h3>
+        <p class="step__text">AI phone agent, automated follow-ups, CRM, review requests — all configured and tested before go-live.</p>
+      </div>
+      <div class="step reveal reveal--delay-3">
+        <div class="step__number">03</div>
+        <h3 class="step__title">Watch leads roll in (Day 7+)</h3>
+        <p class="step__text">Your phone stops going to voicemail. Leads get instant responses. Appointments fill your calendar automatically.</p>
+      </div>
+    </div>
+    <div class="text-center reveal mt-48">
+      <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Your 15-Min Strategy Call <span class="btn-arrow">→</span></a>
+      <p style="color: var(--text-muted); margin-top: 12px; font-size: 0.9rem;">Free. No obligation. We'll show you exactly what we'd build for your business.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="section">
+  <div class="container">
+    <div class="two-col mb-64">
+      <div class="reveal">
+        <span class="section-label">Our Services</span>
+        <h2>What we do for our clients</h2>
+      </div>
+      <div class="reveal">
+        <p>We help businesses streamline operations, capture more leads, and scale faster through powerful AI-driven automations. Our services cover everything from CRM setup and workflow automation to advanced marketing systems that turn prospects into paying customers.</p>
+      </div>
+    </div>
+
+    <div class="two-col" style="gap: 32px;">
+      <div class="tabs reveal">
+        <div class="tabs__nav">
+          <button class="tabs__trigger active" data-tab="tab-webdev">Web Design & Development</button>
+          <button class="tabs__trigger" data-tab="tab-leads">Lead Management</button>
+          <button class="tabs__trigger" data-tab="tab-reputation">Reputation Management</button>
+          <button class="tabs__trigger" data-tab="tab-agents">A.I. Employees</button>
+          <button class="tabs__trigger" data-tab="tab-ads">A.I. Ads</button>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="tabs__content active" id="tab-webdev">
+          <h3 class="mb-16">Web Design & Development</h3>
+          <p class="mb-24">Blending A.I. mastery with our web design & development to ensure user satisfaction.</p>
+          <div class="feature-list">
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Responsive website design</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Conversation A.I. (Chat bot)</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Voice A.I. (Talking website)</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> User-friendly interface design</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Desktop and mobile optimisation</div>
+          </div>
+          <a href="/web-development.html" class="btn btn--primary mt-32">Learn More <span class="btn-arrow">→</span></a>
+        </div>
+        <div class="tabs__content" id="tab-leads">
+          <h3 class="mb-16">Lead Management</h3>
+          <p class="mb-24">Duplicate cleanup and lifecycle normalisation. Fuzzy matching across email variations with preserved history.</p>
+          <div class="feature-list">
+            <div class="feature-item"><span class="feature-item__icon">✓</span> 2 Way SMS Messaging</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Email Drip Campaigns</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Ringless Voicemail Drops</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Facebook Messenger</div>
+          </div>
+          <a href="/lead-management.html" class="btn btn--primary mt-32">Learn More <span class="btn-arrow">→</span></a>
+        </div>
+        <div class="tabs__content" id="tab-reputation">
+          <h3 class="mb-16">Reputation Management</h3>
+          <p class="mb-24">Boost visibility and Customer Trust by gaining good Google reviews automatically.</p>
+          <div class="feature-list">
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Automated review requests via SMS & email</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Direct to Google Reviews</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Private feedback capture</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Brand reputation monitoring</div>
+          </div>
+          <a href="/reputation-management.html" class="btn btn--primary mt-32">Learn More <span class="btn-arrow">→</span></a>
+        </div>
+        <div class="tabs__content" id="tab-agents">
+          <h3 class="mb-16">A.I. Employees</h3>
+          <p class="mb-24">Save time by letting your agent handle repetitive tasks. AI that answers calls, books appointments, and qualifies leads.</p>
+          <div class="feature-list">
+            <div class="feature-item"><span class="feature-item__icon">✓</span> AI Receptionist for calls</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Automatic appointment booking</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Lead qualification 24/7</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Custom knowledge base</div>
+          </div>
+          <a href="/agents.html" class="btn btn--primary mt-32">Learn More <span class="btn-arrow">→</span></a>
+        </div>
+        <div class="tabs__content" id="tab-ads">
+          <h3 class="mb-16">A.I. Ads</h3>
+          <p class="mb-24">Reach more customers with AI-generated high-performing ads across social platforms.</p>
+          <div class="feature-list">
+            <div class="feature-item"><span class="feature-item__icon">✓</span> AI-powered ad creation</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Social media marketing</div>
+            <div class="feature-item"><span class="feature-item__icon">✓</span> Performance optimization</div>
+          </div>
+          <a href="/ai-ads.html" class="btn btn--primary mt-32">Learn More <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGE BREAKDOWN -->
+<section class="section section--blue">
+  <div class="container">
+    <div class="blue-features">
+      <div class="blue-features__left reveal">
+        <span class="section-label" style="color: rgba(255,255,255,0.6);">Package Breakdown</span>
+        <h2 class="mb-24">What do you get when you partner with us</h2>
+      </div>
+      <div class="blue-features__list">
+        <div class="blue-feature reveal reveal--delay-1">
+          <div class="blue-feature__icon">📅</div>
+          <h4 class="blue-feature__title">People Can Book With You Anytime, Day Or Night</h4>
+          <p class="blue-feature__text">Let people book time with you online or on the phone anytime. They'll get reminders, so they don't forget, and you save time.</p>
+        </div>
+        <div class="blue-feature reveal reveal--delay-2">
+          <div class="blue-feature__icon">📥</div>
+          <h4 class="blue-feature__title">Phone, Text, Email All In One Inbox</h4>
+          <p class="blue-feature__text">See all your messages in one place. No more jumping between apps or missing what people say.</p>
+        </div>
+        <div class="blue-feature reveal reveal--delay-3">
+          <div class="blue-feature__icon">🎯</div>
+          <h4 class="blue-feature__title">See Where Every Lead Is At In The Process</h4>
+          <p class="blue-feature__text">Stay on top of things and get more sales. With easy-to-see steps, lead tracking, and smart tools that help your business grow.</p>
+        </div>
+        <div class="blue-feature reveal reveal--delay-4">
+          <div class="blue-feature__icon">✅</div>
+          <h4 class="blue-feature__title">No Headaches</h4>
+          <p class="blue-feature__text">Make work easier with one system that has everything you need to run and grow your business, all in one place.</p>
+        </div>
+        <div class="blue-feature reveal">
+          <div class="blue-feature__icon">🔔</div>
+          <h4 class="blue-feature__title">New Leads</h4>
+          <p class="blue-feature__text">Help new leads remember you. With smart tools that send the right message at the right time. Without extra work.</p>
+        </div>
+        <div class="blue-feature reveal">
+          <div class="blue-feature__icon">🤖</div>
+          <h4 class="blue-feature__title">Chat Tools</h4>
+          <p class="blue-feature__text">Never miss a call! Trained helpers talk to leads and answer questions. Helping them book with you, even when you're busy.</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal text-center mt-48" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="/strategy-meeting.html" class="btn btn--ghost btn--large">Book A Free Demo <span class="btn-arrow">→</span></a>
+      <a href="/pricing.html" class="btn btn--ghost btn--large" style="background: rgba(255,255,255,0.15);">Get Started Now <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">Simple pricing</span>
+      <h2 class="mb-16">Cheaper than a part-time employee. <span class="text-gradient">Works 24/7.</span></h2>
+      <p class="max-w-640 mx-auto">Every plan includes your own AI phone agent, automated follow-ups, and a CRM dashboard. No hidden fees. Cancel anytime.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="pricing-card reveal reveal--delay-1">
+        <h4 class="pricing-card__name">Starter</h4>
+        <div class="pricing-card__price">£170.17</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Small businesses or startups looking to establish their online presence.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Smart website integration/creation</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Responsive website design</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Basic lead management and nurturing</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004GXE0V26P" target="_blank" class="btn btn--outline btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="pricing-card pricing-card--featured reveal reveal--delay-2">
+        <h4 class="pricing-card__name">Growth</h4>
+        <div class="pricing-card__price">£422.88</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Midlevel businesses or startups looking to scale.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Everything in the basic plan</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> CRM (All messages in one place + analytics)</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> A.I. receptionist for calls and bookings</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004GXF58PBA" target="_blank" class="btn btn--primary btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="pricing-card reveal reveal--delay-3">
+        <h4 class="pricing-card__name">Pro</h4>
+        <div class="pricing-card__price">£1,520</div>
+        <div class="pricing-card__period">per month</div>
+        <p class="pricing-card__desc">Large businesses or Enterprises looking to scale and increase productivity.</p>
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Everything in the basic plan</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> A.I. Receptionist (Handles calls)</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> CRM + Data Analytics</div>
+          <div class="pricing-card__feature"><span class="pricing-card__check">✓</span> Automatic Invoicing</div>
+        </div>
+        <a href="https://pay.gocardless.com/BRT0004GXEE54W6" target="_blank" class="btn btn--outline btn--full">Start Automating Today! <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+    <div class="text-center reveal mt-48">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">🛡️ 14-day money-back guarantee on all plans. If you're not seeing results, we'll refund every penny.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY BOTTOM CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="container sticky-cta__inner">
+    <p class="sticky-cta__text"><strong>Ready to stop losing leads?</strong> Book a free 15-min call — we'll show you exactly what we'd build.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary">Book Free Demo <span class="btn-arrow">→</span></a>
+  </div>
+</div>
+
+
+  <!-- Mobile Pre-Footer CTA (hidden on desktop) -->
+  <div class="mobile-prefooter-cta">
+    <div class="mobile-prefooter-cta__title">Still deciding?</div>
+    <p class="mobile-prefooter-cta__text">Book a free 15-min call — we'll show you exactly what we'd build for your business.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="footer__logo-img" />
+          </div>
+          <p class="footer__desc">London-based AI automation agency empowering businesses through intelligent digital systems. Where innovation meets results.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="/" class="footer__link">Home</a>
+          <a href="/services.html" class="footer__link">Services</a>
+          <a href="/pricing.html" class="footer__link">Pricing</a>
+          <a href="/contact.html" class="footer__link">Contact Us</a>
+          <a href="/about.html" class="footer__link">About Us</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:+448003167364">+44 800 316 7364</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>✉️</span>
+            <a href="mailto:contact@lyracapital.co.uk">contact@lyracapital.co.uk</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026. Lyra Capital. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA Bar (hidden on desktop) -->
+  <div class="mobile-sticky-cta" id="mobileStickyCtaBar">
+    <a href="/strategy-meeting.html" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
+    <a href="tel:+448003167364" class="mobile-sticky-cta__call" aria-label="Call us">📞</a>
+  </div>
+
+</div>
+
+
+<!-- Page-specific widgets -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69a7f138e7bf961b03c4bd64"></script>

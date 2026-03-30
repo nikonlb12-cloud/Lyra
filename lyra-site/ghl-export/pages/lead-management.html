@@ -1,0 +1,249 @@
+<!-- lead-management.html — Lyra Capital -->
+<!-- GHL: Paste this into the page's Custom Code editor -->
+<!-- Make sure site-css.css is in Site Settings → Custom CSS -->
+<!-- Make sure site-footer-js.html is in Site Settings → Custom Code → Footer -->
+
+<div id="app">
+
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <canvas id="particles-canvas"></canvas>
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link ">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-trigger ">
+            About <span class="nav__dropdown-arrow">▼</span>
+          </span>
+          <div class="nav__dropdown-menu">
+            <a href="/about.html" class="nav__dropdown-item">Our Story</a>
+            <a href="/core-values.html" class="nav__dropdown-item">Core Values</a>
+            <a href="/why-us.html" class="nav__dropdown-item">Why Choose Us</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <a href="/pricing.html" class="nav__link nav__dropdown-trigger ">
+            Plans & Pricing <span class="nav__dropdown-arrow">▼</span>
+          </a>
+          <div class="nav__dropdown-menu">
+            <div style="padding: 16px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">Choose your growth plan:</p>
+              <a href="/pricing.html#starter" class="nav__dropdown-item">🚀 Starter — £260.17/mo</a>
+              <a href="/pricing.html#growth" class="nav__dropdown-item">📈 Growth — £422.88/mo</a>
+              <a href="/pricing.html#pro" class="nav__dropdown-item">⚡ Pro — £1,520/mo</a>
+              <a href="/pricing.html#yearly" class="nav__dropdown-item">💎 Yearly Premium</a>
+            </div>
+          </div>
+        </div>
+        <a href="/services.html" class="nav__link ">Services</a>
+      </div>
+      <a href="/free-trial.html" class="nav__trial-cta ">🎁 Free Trial</a>
+      <a href="/contact.html" class="btn btn--primary nav__cta">Contact Us</a>
+      <a href="/free-trial.html" class="nav__mobile-pill">🎁 Free Trial</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="/" class="nav__mobile-link">Home</a>
+    <div class="nav__mobile-sub">
+      <span class="nav__mobile-link" style="color: var(--accent-primary); font-weight: 600; border: none; padding-bottom: 8px;">About</span>
+      <a href="/about.html" class="nav__mobile-link">Our Story</a>
+      <a href="/core-values.html" class="nav__mobile-link">Core Values</a>
+      <a href="/why-us.html" class="nav__mobile-link">Why Choose Us</a>
+    </div>
+    <a href="/pricing.html" class="nav__mobile-link">Plans & Pricing</a>
+    <a href="/services.html" class="nav__mobile-link">Services</a>
+    <a href="/contact.html" class="nav__mobile-link">Contact Us</a>
+    <a href="/free-trial.html" class="nav__mobile-trial-cta">🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS</a>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
+  </div>
+
+<!-- Hero -->
+<section class="wl-hero wl-hero--compact">
+  <div class="wl-hero__bg">
+    <div class="wl-hero__ring wl-hero__ring--outer">
+      <img src="https://framerusercontent.comhttps://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/oqZEqzDEgSLygmUDuZAYNh2XQ9U.png?scale-down-to=2048" alt="" />
+    </div>
+    <div class="wl-hero__ring wl-hero__ring--mid">
+      <img src="https://framerusercontent.comhttps://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/UbucGYsHDAUHfaGZNjwyCzViw8.png?scale-down-to=1024" alt="" />
+    </div>
+    <div class="wl-hero__ring wl-hero__ring--inner">
+      <img src="https://framerusercontent.comhttps://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/Ans5PAxtJfg3CwxlrPMSshx2Pqc.png" alt="" />
+    </div>
+  </div>
+  <div class="wl-hero__overlay"></div>
+  <div class="wl-hero__content">
+    <h1 class="wl-hero__title">Never lose a lead again.</h1>
+    <p class="wl-hero__subtitle">Every missed call, slow reply, and forgotten follow-up is money walking out the door. We fix that.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--large mt-24">See It Working — Free Demo <span class="btn-arrow">→</span></a>
+    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 12px;">✓ No contracts · ✓ Live in under 24hrs</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal">
+        <h2 class="mb-16">Your leads aren't bad. <span class="text-gradient">Your follow-up is.</span></h2>
+        <p class="mb-24">Studies show 78% of customers buy from whoever responds first. If you're taking hours to reply, your competitors are closing YOUR leads. Our system responds in under 60 seconds — via text, email, and voicemail — automatically.</p>
+        <div class="feature-list mb-24">
+          <div class="feature-item"><span class="feature-item__icon">✓</span> Instant response within 60 seconds</div>
+          <div class="feature-item"><span class="feature-item__icon">✓</span> Multi-channel: SMS, email, voicemail, Messenger</div>
+          <div class="feature-item"><span class="feature-item__icon">✓</span> Automated nurture sequences until they book</div>
+          <div class="feature-item"><span class="feature-item__icon">✓</span> One dashboard for every conversation</div>
+        </div>
+        <a href="/strategy-meeting.html" class="btn btn--primary btn--large">See It Working — Free Demo <span class="btn-arrow">→</span></a>
+        <p style="color: var(--text-muted); margin-top: 12px; font-size: 0.85rem;">✓ No contracts · ✓ Live in under 24hrs</p>
+      </div>
+      <div class="reveal reveal--delay-2" style="display: flex; justify-content: center;">
+        <div style="width: 100%; max-width: 400px; aspect-ratio: 1; background: linear-gradient(135deg, rgba(59,91,255,0.15), rgba(139,92,246,0.1)); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-subtle);">
+          <div style="text-align: center; padding: 40px;">
+            <div style="font-size: 4rem; margin-bottom: 16px;">📋</div>
+            <p style="font-size: 1.2rem; font-weight: 600;">Lead Automation</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Convert more. Lose less.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Before/After -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">The difference</span>
+      <h2 class="mb-16">Without Lyra <span class="text-gradient">vs. with Lyra</span></h2>
+    </div>
+    <div class="grid grid--2 mb-64">
+      <div class="card reveal reveal--delay-1" style="border-color: rgba(239,68,68,0.3);">
+        <h4 class="card__title" style="color: #f87171;">❌ Without Lyra</h4>
+        <div class="feature-list" style="margin-top: 16px;">
+          <div class="feature-item" style="color: var(--text-muted);"><span class="feature-item__icon" style="color: #f87171;">✗</span> Leads wait hours for a response</div>
+          <div class="feature-item" style="color: var(--text-muted);"><span class="feature-item__icon" style="color: #f87171;">✗</span> Follow-ups are manual and inconsistent</div>
+          <div class="feature-item" style="color: var(--text-muted);"><span class="feature-item__icon" style="color: #f87171;">✗</span> Messages scattered across 5 different apps</div>
+          <div class="feature-item" style="color: var(--text-muted);"><span class="feature-item__icon" style="color: #f87171;">✗</span> No idea which leads are hot</div>
+          <div class="feature-item" style="color: var(--text-muted);"><span class="feature-item__icon" style="color: #f87171;">✗</span> Missed calls go to voicemail (and nowhere else)</div>
+        </div>
+      </div>
+      <div class="card reveal reveal--delay-2" style="border-color: rgba(34,197,94,0.3);">
+        <h4 class="card__title" style="color: #22c55e;">✅ With Lyra</h4>
+        <div class="feature-list" style="margin-top: 16px;">
+          <div class="feature-item"><span class="feature-item__icon" style="color: #22c55e;">✓</span> Auto-response in under 60 seconds</div>
+          <div class="feature-item"><span class="feature-item__icon" style="color: #22c55e;">✓</span> AI follows up until they book or unsubscribe</div>
+          <div class="feature-item"><span class="feature-item__icon" style="color: #22c55e;">✓</span> Every message in one unified inbox</div>
+          <div class="feature-item"><span class="feature-item__icon" style="color: #22c55e;">✓</span> Lead scoring tells you who to call first</div>
+          <div class="feature-item"><span class="feature-item__icon" style="color: #22c55e;">✓</span> AI answers calls and books appointments 24/7</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Automation Channels -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">Multi-channel outreach</span>
+      <h2 class="mb-16">We reach leads <span class="text-gradient">wherever they are</span></h2>
+      <p class="max-w-640 mx-auto">Your leads don't check just one channel. Neither do we. Our system fires across SMS, email, voicemail, and Messenger simultaneously.</p>
+    </div>
+    <div class="grid grid--2">
+      <div class="card reveal reveal--delay-1">
+        <div class="card__icon">📱</div>
+        <h4 class="card__title">2-Way SMS Messaging</h4>
+        <p class="card__text">Real conversations, not blasts. Leads can reply directly and your AI keeps the thread going until they book.</p>
+      </div>
+      <div class="card reveal reveal--delay-2">
+        <div class="card__icon">📧</div>
+        <h4 class="card__title">Email Drip Campaigns</h4>
+        <p class="card__text">Automated sequences that nurture cold leads over days and weeks. Personalised, timed, relentless.</p>
+      </div>
+      <div class="card reveal reveal--delay-3">
+        <div class="card__icon">📞</div>
+        <h4 class="card__title">Ringless Voicemail Drops</h4>
+        <p class="card__text">Leave a personal voicemail without the phone ringing. Non-intrusive. High open rates. Zero effort from you.</p>
+      </div>
+      <div class="card reveal reveal--delay-4">
+        <div class="card__icon">💬</div>
+        <h4 class="card__title">Facebook Messenger</h4>
+        <p class="card__text">Reach leads on the platform they use most. AI handles the conversation and pushes them to book.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--dark">
+  <div class="container text-center">
+    <div class="reveal mb-32">
+      <h2>Stop losing leads to slow follow-up.</h2>
+      <p class="max-w-640 mx-auto mt-16" style="color: var(--text-muted);">Book a free 15-minute call. We'll show you exactly how many leads you're losing and how we'd fix it — for your specific business.</p>
+    </div>
+    <div class="reveal">
+      <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Your Free Strategy Call <span class="btn-arrow">→</span></a>
+      <p style="color: var(--text-muted); margin-top: 12px; font-size: 0.85rem;">🛡️ 14-day money-back guarantee. No contracts.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Mobile Pre-Footer CTA (hidden on desktop) -->
+  <div class="mobile-prefooter-cta">
+    <div class="mobile-prefooter-cta__title">Still deciding?</div>
+    <p class="mobile-prefooter-cta__text">Book a free 15-min call — we'll show you exactly what we'd build for your business.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="footer__logo-img" />
+          </div>
+          <p class="footer__desc">London-based AI automation agency empowering businesses through intelligent digital systems. Where innovation meets results.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="/" class="footer__link">Home</a>
+          <a href="/services.html" class="footer__link">Services</a>
+          <a href="/pricing.html" class="footer__link">Pricing</a>
+          <a href="/contact.html" class="footer__link">Contact Us</a>
+          <a href="/about.html" class="footer__link">About Us</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:+448003167364">+44 800 316 7364</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>✉️</span>
+            <a href="mailto:contact@lyracapital.co.uk">contact@lyracapital.co.uk</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026. Lyra Capital. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA Bar (hidden on desktop) -->
+  <div class="mobile-sticky-cta" id="mobileStickyCtaBar">
+    <a href="/strategy-meeting.html" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
+    <a href="tel:+448003167364" class="mobile-sticky-cta__call" aria-label="Call us">📞</a>
+  </div>
+
+</div>
+
+
+<!-- Page-specific widgets -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69a7f138e7bf961b03c4bd64"></script>

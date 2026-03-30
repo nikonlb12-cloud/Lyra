@@ -1,0 +1,219 @@
+<!-- reputation-management.html — Lyra Capital -->
+<!-- GHL: Paste this into the page's Custom Code editor -->
+<!-- Make sure site-css.css is in Site Settings → Custom CSS -->
+<!-- Make sure site-footer-js.html is in Site Settings → Custom Code → Footer -->
+
+<div id="app">
+
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <canvas id="particles-canvas"></canvas>
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link ">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-trigger ">
+            About <span class="nav__dropdown-arrow">▼</span>
+          </span>
+          <div class="nav__dropdown-menu">
+            <a href="/about.html" class="nav__dropdown-item">Our Story</a>
+            <a href="/core-values.html" class="nav__dropdown-item">Core Values</a>
+            <a href="/why-us.html" class="nav__dropdown-item">Why Choose Us</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <a href="/pricing.html" class="nav__link nav__dropdown-trigger ">
+            Plans & Pricing <span class="nav__dropdown-arrow">▼</span>
+          </a>
+          <div class="nav__dropdown-menu">
+            <div style="padding: 16px;">
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">Choose your growth plan:</p>
+              <a href="/pricing.html#starter" class="nav__dropdown-item">🚀 Starter — £260.17/mo</a>
+              <a href="/pricing.html#growth" class="nav__dropdown-item">📈 Growth — £422.88/mo</a>
+              <a href="/pricing.html#pro" class="nav__dropdown-item">⚡ Pro — £1,520/mo</a>
+              <a href="/pricing.html#yearly" class="nav__dropdown-item">💎 Yearly Premium</a>
+            </div>
+          </div>
+        </div>
+        <a href="/services.html" class="nav__link ">Services</a>
+      </div>
+      <a href="/free-trial.html" class="nav__trial-cta ">🎁 Free Trial</a>
+      <a href="/contact.html" class="btn btn--primary nav__cta">Contact Us</a>
+      <a href="/free-trial.html" class="nav__mobile-pill">🎁 Free Trial</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="/" class="nav__mobile-link">Home</a>
+    <div class="nav__mobile-sub">
+      <span class="nav__mobile-link" style="color: var(--accent-primary); font-weight: 600; border: none; padding-bottom: 8px;">About</span>
+      <a href="/about.html" class="nav__mobile-link">Our Story</a>
+      <a href="/core-values.html" class="nav__mobile-link">Core Values</a>
+      <a href="/why-us.html" class="nav__mobile-link">Why Choose Us</a>
+    </div>
+    <a href="/pricing.html" class="nav__mobile-link">Plans & Pricing</a>
+    <a href="/services.html" class="nav__mobile-link">Services</a>
+    <a href="/contact.html" class="nav__mobile-link">Contact Us</a>
+    <a href="/free-trial.html" class="nav__mobile-trial-cta">🎁 TRY SMART-WEBSITE FREE FOR 14 DAYS</a>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--full" style="margin-top: 12px;">Book Free Demo</a>
+  </div>
+
+
+  <section class="page-header">
+    <div class="page-header__bg">
+      <div class="page-header__gradient"></div>
+    </div>
+    <div class="container page-header__content">
+      <h1>Your Google reviews are your best salesperson</h1>
+      <p>90% of customers read reviews before choosing a business. We make sure yours are 5 stars.</p>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal">
+        <h2 class="mb-16">From 3.2 stars to 4.8-5 <span class="text-gradient">in 8 weeks.</span></h2>
+        <p class="mb-16">Here's the problem: your happy customers don't leave reviews. Your angry ones do. That's why your rating doesn't reflect how good your service actually is.</p>
+        <p class="mb-16">Our system fixes this automatically. After every completed job, we send a friendly SMS asking for feedback. Happy? They're guided straight to Google. Unhappy? The feedback comes to you privately — so you can fix it before it goes public.</p>
+        <div class="feature-list mb-24">
+          <div class="feature-item"><span class="feature-item__icon">✓</span> Automated review requests after every service</div>
+          <div class="feature-item"><span class="feature-item__icon">✓</span> Happy → Google review. Unhappy → private feedback</div>
+          <div class="feature-item"><span class="feature-item__icon">✓</span> Works via SMS and email simultaneously</div>
+          <div class="feature-item"><span class="feature-item__icon">✓</span> Dashboard to monitor all reviews in one place</div>
+        </div>
+        <a href="/strategy-meeting.html" class="btn btn--primary btn--large">See It Working — Free Demo <span class="btn-arrow">→</span></a>
+        <p style="color: var(--text-muted); margin-top: 12px; font-size: 0.85rem;">✓ No contracts · ✓ Set up in under 24hrs</p>
+      </div>
+      <div class="reveal reveal--delay-2" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
+        <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/reputation-analytics.png" alt="Reputation Management Analytics" style="width: 100%; max-width: 420px; border-radius: 0; box-shadow: none; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-composite: destination-in; mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%); mask-composite: intersect;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">How it works</span>
+      <h2 class="mb-16">3 steps to a <span class="text-gradient">5-star reputation</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal reveal--delay-1">
+        <div class="step__number">01</div>
+        <h3 class="step__title">Complete a job</h3>
+        <p class="step__text">When a service is marked complete in your CRM, the review system triggers automatically.</p>
+      </div>
+      <div class="step reveal reveal--delay-2">
+        <div class="step__number">02</div>
+        <h3 class="step__title">Customer gets a text</h3>
+        <p class="step__text">"How was your experience with [Your Business]?" One tap takes them to your Google review page.</p>
+      </div>
+      <div class="step reveal reveal--delay-3">
+        <div class="step__number">03</div>
+        <h3 class="step__title">Reviews pile up</h3>
+        <p class="step__text">Within weeks, your Google profile fills with genuine 5-star reviews. More reviews = more phone calls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Proof -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal mb-48">
+      <span class="section-label">The numbers</span>
+      <h2 class="mb-16">Why reviews <span class="text-gradient">matter more than ads</span></h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card reveal reveal--delay-1" style="text-align: center;">
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-primary); font-family: var(--font-heading); margin-bottom: 8px;">90%</div>
+        <p class="card__text">of consumers read online reviews before visiting a business</p>
+      </div>
+      <div class="card reveal reveal--delay-2" style="text-align: center;">
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-primary); font-family: var(--font-heading); margin-bottom: 8px;">4.2★</div>
+        <p class="card__text">is the minimum rating consumers trust — below that, they skip you entirely</p>
+      </div>
+      <div class="card reveal reveal--delay-3" style="text-align: center;">
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-primary); font-family: var(--font-heading); margin-bottom: 8px;">270%</div>
+        <p class="card__text">more likely to purchase when a business has positive reviews vs. none</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--dark">
+  <div class="container text-center">
+    <div class="reveal mb-32">
+      <h2>Your competitors have more reviews than you.</h2>
+      <p class="max-w-640 mx-auto mt-16" style="color: var(--text-muted);">Every day without an automated review system is another day they outrank you on Google. Let's fix that.</p>
+    </div>
+    <div class="reveal">
+      <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Your Free Demo <span class="btn-arrow">→</span></a>
+      <p style="color: var(--text-muted); margin-top: 12px; font-size: 0.85rem;">🛡️ 14-day money-back guarantee. No contracts.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Mobile Pre-Footer CTA (hidden on desktop) -->
+  <div class="mobile-prefooter-cta">
+    <div class="mobile-prefooter-cta__title">Still deciding?</div>
+    <p class="mobile-prefooter-cta__text">Book a free 15-min call — we'll show you exactly what we'd build for your business.</p>
+    <a href="/strategy-meeting.html" class="btn btn--primary btn--large">Book Free Strategy Call <span class="btn-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://raw.githubusercontent.com/nikonlb12-cloud/Lyra/main/public/images/lyra-logo.png" alt="Lyra Capital" class="footer__logo-img" />
+          </div>
+          <p class="footer__desc">London-based AI automation agency empowering businesses through intelligent digital systems. Where innovation meets results.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="/" class="footer__link">Home</a>
+          <a href="/services.html" class="footer__link">Services</a>
+          <a href="/pricing.html" class="footer__link">Pricing</a>
+          <a href="/contact.html" class="footer__link">Contact Us</a>
+          <a href="/about.html" class="footer__link">About Us</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:+448003167364">+44 800 316 7364</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>✉️</span>
+            <a href="mailto:contact@lyracapital.co.uk">contact@lyracapital.co.uk</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026. Lyra Capital. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA Bar (hidden on desktop) -->
+  <div class="mobile-sticky-cta" id="mobileStickyCtaBar">
+    <a href="/strategy-meeting.html" class="mobile-sticky-cta__btn">Book Free Demo <span class="btn-arrow">→</span></a>
+    <a href="tel:+448003167364" class="mobile-sticky-cta__call" aria-label="Call us">📞</a>
+  </div>
+
+</div>
+
+
+<!-- Page-specific widgets -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69a7f138e7bf961b03c4bd64"></script>
