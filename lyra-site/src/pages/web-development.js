@@ -47,7 +47,7 @@ ${getNav('web-development')}
     <div class="hero__urgency-badge reveal">🔥 Only 12 free builds left this month</div>
     <h1 class="hero__title" style="max-width: 800px; margin: 0 auto 24px;">Yes, I'll Build Your Local Business Website for <span class="text-gradient">FREE</span></h1>
     <p class="hero__text mx-auto" style="max-width: 600px; margin-bottom: 36px;">Get a professional, AI-powered website designed and launched in under 24 hours. Zero cost for the build.</p>
-    <a href="#signup" class="btn btn--primary btn--large">Claim My Spot Now <span class="btn-arrow">→</span></a>
+    <a href="/free-trial.html" class="btn btn--primary btn--large">Claim My Spot Now <span class="btn-arrow">→</span></a>
     <p class="hero__trust-line" style="margin-top: 16px;">✓ No contracts · ✓ Cancel anytime · ✓ Live in 24hrs · ✓ 14-day money-back</p>
   </div>
 </section>
@@ -110,7 +110,7 @@ ${getNav('web-development')}
     </div>
 
     <div class="text-center reveal mt-48">
-      <a href="#signup" class="btn btn--primary btn--large">Start My Free Website <span class="btn-arrow">→</span></a>
+      <a href="/free-trial.html" class="btn btn--primary btn--large">Start My Free Website <span class="btn-arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -160,7 +160,7 @@ ${getNav('web-development')}
             <div class="feature-item"><span class="feature-item__icon">✓</span> Voice A.I. (talking website)</div>
             <div class="feature-item"><span class="feature-item__icon">✓</span> Conversation A.I. (chatbot)</div>
           </div>
-          <a href="#signup" class="btn btn--primary btn--large btn--full mt-32">Claim My Free Website <span class="btn-arrow">→</span></a>
+          <a href="/free-trial.html" class="btn btn--primary btn--large btn--full mt-32">Claim My Free Website <span class="btn-arrow">→</span></a>
         </div>
       </div>
       <div class="reveal reveal--delay-2">
@@ -176,7 +176,7 @@ ${getNav('web-development')}
             <div class="feature-item"><span class="feature-item__icon">✓</span> Suitable for any industry</div>
           </div>
           <p style="font-size: 1.5rem; font-weight: 800; color: var(--accent-primary); margin-top: 24px;">£26/mo</p>
-          <a href="#signup" class="btn btn--outline btn--large btn--full mt-32">Get Started <span class="btn-arrow">→</span></a>
+          <a href="/free-trial.html" class="btn btn--outline btn--large btn--full mt-32">Get Started <span class="btn-arrow">→</span></a>
         </div>
       </div>
     </div>
