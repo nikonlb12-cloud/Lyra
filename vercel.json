@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd lyra-site && npm install && npm run build",
+  "outputDirectory": "lyra-site/dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
+}
