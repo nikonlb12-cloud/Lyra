@@ -413,7 +413,7 @@ p {
 }
 
 .nav--scrolled {
-  background: rgba(5, 8, 16, 0.85);
+  background: rgba(5, 8, 16, 0.98);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
   padding: 10px 0;
