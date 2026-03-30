@@ -56,7 +56,7 @@ ${getPageHeader('Built by a founder tired of agencies that over-promise', "Lyra 
   <div class="container">
     <div class="stats reveal">
       <div>
-        <div class="stat__number" data-count="200" data-suffix="+">0</div>
+        <div class="stat__number" data-count="20" data-suffix="+">0</div>
         <div class="stat__label">Businesses automated</div>
       </div>
       <div>

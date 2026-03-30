@@ -70,7 +70,7 @@ ${getNav('home')}
   <div class="container">
     <div class="social-proof-bar__inner">
       <div class="social-proof-bar__stat">
-        <span class="social-proof-bar__number" data-count="200" data-suffix="+">0</span>
+        <span class="social-proof-bar__number" data-count="20" data-suffix="+">0</span>
         <span class="social-proof-bar__label">Businesses automated</span>
       </div>
       <div class="social-proof-bar__divider"></div>

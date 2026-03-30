@@ -92,7 +92,7 @@ ${getNav('free-trial')}
         <!-- SOCIAL PROOF -->
         <div class="trial-proof reveal">
           <div class="trial-proof__stat">
-            <div class="trial-proof__number">200+</div>
+            <div class="trial-proof__number">20+</div>
             <div class="trial-proof__label">Businesses automated</div>
           </div>
           <div class="trial-proof__divider"></div>
